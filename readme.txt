@@ -26,12 +26,16 @@ an official fix or for replacing an unmaintained plugin.
 
 == Description ==
 
-Contact Form 7 Signature Addon (by Breizhtorm) builds an e-mail attachment
-path from the value posted in a signature field. A visitor can post a crafted
-value instead of a drawing and make a form e-mail an unrelated file from
-wp-content. All versions up to 4.2.2 are affected and there is no fixed
-release. As of 12 November 2026 WPScan lists "No known fix", and the plugin
-page on wordpress.org says it was closed on 6 October 2026.
+Contact Form 7 Signature Addon (by Breizhtorm) adds a signature field to
+Contact Form 7. Visitors sign by hand on a canvas, and the signature is sent
+with the form's e-mail, so a form can be submitted signed.
+
+Versions up to 4.2.2 of that plugin have a security flaw, CVE-2026-104246.
+The addon builds an e-mail attachment path from the value posted in the
+signature field, so a crafted submission can make a form e-mail an unrelated
+file from wp-content. There is no fixed release. As of 12 November 2026
+WPScan lists "No known fix", and the plugin page on wordpress.org says it was
+closed on 6 October 2026.
 
 This file does not change the addon's files. It loads before all normal
 plugins, then checks for each known problem whether it is still present on

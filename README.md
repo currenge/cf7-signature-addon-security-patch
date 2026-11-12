@@ -2,7 +2,9 @@
 
 Unofficial fix for **CVE-2026-104246** in *Contact Form 7 Signature Addon* 4.2.2, delivered as a single-file WordPress must-use plugin.
 
-[*Contact Form 7 Signature Addon*](https://github.com/Breizhtorm/Contact-Form-7-Signature-Addon) (by Breizhtorm) lets a visitor make a form e-mail an unrelated file from `wp-content`. The plugin has no fixed release. This file blocks that, without changing the addon's own files.
+[*Contact Form 7 Signature Addon*](https://github.com/Breizhtorm/Contact-Form-7-Signature-Addon) by Breizhtorm adds a signature field to Contact Form 7. Visitors sign by hand on a canvas, and the signature is sent with the form's e-mail, so a form can be submitted signed.
+
+Versions up to 4.2.2 of that plugin have a security flaw, CVE-2026-104246: a crafted submission can make a form e-mail an unrelated file from `wp-content`. The plugin has no fixed release. This file blocks the flaw without changing the addon's own files, and signing keeps working as before.
 
 > [!WARNING]
 > **Use at your own risk.** This is an unofficial, independent patch. It is not written, reviewed or endorsed by Breizhtorm, by the Contact Form 7 project, by the authors of any other plugin named here, or by WordPress.org. It is provided "as is", without warranty of any kind. You install and use it entirely on your own responsibility. Test it on a staging copy of your site and keep a backup. It reduces one specific risk; it does not make a site secure and it is not a substitute for an official fix or for replacing an unmaintained plugin.
